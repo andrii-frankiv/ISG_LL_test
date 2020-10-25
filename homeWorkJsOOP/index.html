@@ -1,0 +1,45 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link href="style.css" rel="stylesheet">
+    <title>Script OOP</title>
+    <script src="script.js"></script>
+</head>
+<body>
+    <h1 class="title">Book List</h1>
+    <hr/>
+    <div class="book">
+        <div class="container">
+            <div class="book__row">
+                <div class="book__content">
+                    <div class="book__info">
+                        <p>Number of books marked as read: <span id="isReaded">0</span> </p>
+                        <p>Number of books marked not read yet: <span id="isntReaded">0</span> </p>
+                        <p>An array of all the Books: <span id="numberOfBooks">0</span></p>
+                        <p>Current Book: <span id="currentBook">-</span></p>
+                        <p>Next Book: <span id="nextBook">-</span></p>
+                        <p>Last Read: <span id="lastBook">-</span></p>
+                    </div>
+                    <div class="book__input">
+                        <input class="item__input" id="bookName" type="text" onfocus="this.value=''" value="Print here name of a Book">
+                        <input class="item__input" id="bookGenre" type="text" onfocus="this.value=''" value="Print here genre name of a Book">
+                        <input class="item__input" id="bookAuthor" type="text" onfocus="this.value=''" value="Print here Author name of a Book">
+                    </div>
+                    <button class="book__add" onclick='booklist.add("title1","genre1","author1", false, null);'>Add New Book To The List</button>
+                    <div class="book__list" id="list_item">
+                        
+                    </div>
+                    <p id="annotation">** Book info saving last info about current next and last books, if you delate it by mistake :) **</p>
+                </div>
+            </div>
+        </div>
+    </div>
+
+    <script>
+
+
+    </script>
+</body>
+</html>

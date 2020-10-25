@@ -1,0 +1,128 @@
+* {
+  margin: 0;
+  padding: 0;
+  font-family: garamond;
+  color: #414141;
+}
+
+button:hover {
+  cursor: pointer;
+}
+
+.title {
+  text-align: center;
+  padding: 25px;
+}
+
+.book {
+  width: 100%;
+}
+
+.book .container {
+  max-width: 1200px;
+  margin: 0 auto;
+}
+
+.book .container .book__row .book__content {
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-orient: vertical;
+  -webkit-box-direction: normal;
+      -ms-flex-direction: column;
+          flex-direction: column;
+}
+
+.book .container .book__row .book__content .book__info {
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-pack: justify;
+      -ms-flex-pack: justify;
+          justify-content: space-between;
+  -ms-flex-wrap: wrap;
+      flex-wrap: wrap;
+}
+
+.book .container .book__row .book__content .book__info p {
+  text-align: center;
+  -webkit-box-flex: 1;
+      -ms-flex: 1 1 33%;
+          flex: 1 1 33%;
+  padding: 25px 0 50px;
+  font-size: 20px;
+}
+
+.book .container .book__row .book__content .book__input {
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -ms-flex-wrap: wrap;
+      flex-wrap: wrap;
+  margin: 0 20px 20px 20px;
+}
+
+.book .container .book__row .book__content .book__input .item__input {
+  -webkit-box-flex: 1;
+      -ms-flex: 1 1 25%;
+          flex: 1 1 25%;
+  margin: 10px 40px;
+  padding: 2px;
+}
+
+.book .container .book__row .book__content .book__add {
+  width: -webkit-max-content;
+  width: -moz-max-content;
+  width: max-content;
+  margin: 0 auto 20px;
+  padding: 10px;
+  border: 1px solid black;
+  font-size: 20px;
+  color: white;
+  background-color: #414141;
+  border-radius: 5px;
+}
+
+.book .container .book__row .book__content .book__list {
+  -webkit-box-flex: 1;
+      -ms-flex: 1 1 auto;
+          flex: 1 1 auto;
+}
+
+.book .container .book__row .book__content .book__list .list__items {
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-pack: justify;
+      -ms-flex-pack: justify;
+          justify-content: space-between;
+  max-width: 50%;
+  margin: 0 auto;
+  border: 2px solid #5f5f5f;
+  padding: 20px 40px;
+  border-radius: 5px;
+}
+
+.book .container .book__row .book__content .book__list .list__items p {
+  font-weight: bold;
+  text-transform: uppercase;
+}
+
+.book .container .book__row .book__content .book__list .list__items .item__btn {
+  padding: 2px 5px;
+  font-family: Georgia, 'Times New Roman', Times, serif;
+  background-color: red;
+  color: white;
+  border: none;
+  border-radius: 2px;
+}
+
+.book .container .book__row .book__content .book__list .list__items .item__btn:focus {
+  outline: none;
+}
+
+.book .container .book__row .book__content #annotation {
+  text-align: center;
+  padding: 20px;
+}
+/*# sourceMappingURL=style.css.map */

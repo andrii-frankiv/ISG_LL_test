@@ -1,0 +1,90 @@
+*{
+    margin: 0;
+    padding: 0;
+    font-family:garamond;
+    color:#414141;
+}
+button:hover{
+    cursor: pointer;
+}
+.title{
+    text-align: center;
+    padding: 25px;
+}
+.book{
+    width:100%;
+    .container{
+        max-width:1200px;
+        margin: 0 auto;
+        
+        .book__row{ 
+            .book__content{
+                display: flex;
+                flex-direction: column;
+                .book__info{
+
+                    display: flex;
+                    justify-content: space-between;
+                    flex-wrap: wrap;
+                        p{
+                            text-align: center;
+                            flex: 1 1 33%;
+                            padding: 25px 0 50px;
+                            font-size:20px;
+                        }
+                }
+                .book__input{
+                    display: flex;
+                    flex-wrap: wrap;
+                    margin: 0 20px 20px 20px;
+                    .item__input{
+                        flex: 1 1 25%;
+                        margin: 10px 40px;
+                        padding: 2px;
+                    }
+                }
+                .book__add{ 
+                    width:max-content;
+                    margin: 0 auto 20px;
+                    padding: 10px;
+                    border:1px solid black;
+                    font-size: 20px;
+                    color: white;
+                    background-color: #414141;
+                    border-radius: 5px;
+                }
+                .book__list{
+                    flex: 1 1 auto;
+                    .list__items{
+                        display: flex;
+                        justify-content: space-between;
+                        max-width:50%;
+                        margin: 0 auto;
+                        border: 2px solid #5f5f5f;
+                        padding:20px 40px;
+                        border-radius: 5px;
+                        p{
+                            font-weight: bold;
+                            text-transform: uppercase;
+                        }
+                        .item__btn{
+                            padding: 2px 5px;
+                            font-family: Georgia, 'Times New Roman', Times, serif;
+                            background-color: red;
+                            color:white;
+                            border: none;
+                            border-radius: 2px;
+                        }
+                        .item__btn:focus{
+                            outline: none;  
+                        }
+                    }
+                }
+                #annotation{
+                    text-align: center;
+                    padding: 20px;
+                }
+            }  
+        } 
+    }
+}
