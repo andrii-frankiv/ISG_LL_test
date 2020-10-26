@@ -91,12 +91,10 @@ class BookList{
         if(this.array[index-1].isRead){
             this.array[index-1].isRead = false;
             this.bookRead--;
-            console.log('lol');
             this.numberOfBooks--;
             this.array[index-1].readDate = null;
         }else{
             this.array[index-1].isRead = false;
-            console.log('lal');
             this.bookNotRead--;
             this.numberOfBooks--;
             this.array[index-1].readDate = null;
