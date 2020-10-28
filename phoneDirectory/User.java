@@ -15,7 +15,7 @@ public class User {
     }
 
     void addPhoneToList(String name,Integer number){
-        System.out.println(name + "is added.");
+        System.out.println(name + " is added.");
         phoneList.put(name,number);
     }
     void getPhoneList(){
