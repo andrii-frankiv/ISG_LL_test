@@ -135,3 +135,8 @@ class Book{
 }
 
 booklist = new BookList(0,0,0,[],[]);
+
+
+module.exports = {
+    Book, BookList
+}
