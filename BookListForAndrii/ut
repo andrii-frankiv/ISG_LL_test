@@ -1,0 +1,62 @@
+~/Development/ISG_Labs/UT(master*) » jest ReadingList.spec.js                andriifrankiv@MacBook-Pro
+ FAIL  ./ReadingList.spec.js
+  The Reading List
+    Book class
+      should return object with properties Title, Genre, Author
+        ✓ should own property Title (2 ms)
+        ✓ should own property Genre (1 ms)
+        ✓ should own property Author
+      should create Book instance with passed properties
+        ✓ should has property Title equals to Колобок (1 ms)
+        ✓ should has property Genre equals to Окультизм
+        ✓ should has property Author equals to невідомий
+    BookList class
+      BookList should be able to add books and mark them as "read"
+        ✓ should have add method
+        ✓ should have finishCurrentBook method  (1 ms)
+      Add book to the list
+        ✕ encountered a declaration exception (1 ms)
+      Finish reading current book
+        ✕ encountered a declaration exception
+
+  ● The Reading List › BookList class › Add book to the list › encountered a declaration exception
+
+    TypeError: Cannot read property 'length' of undefined
+
+      182 |       const bookList = new BookList();
+      183 |
+    > 184 |       const prevLength = bookList.array.length;
+          |                                         ^
+      185 |
+      186 |       bookList.add(book);
+      187 |
+
+      at Suite.<anonymous> (ReadingList.spec.js:184:41)
+      at Suite.<anonymous> (ReadingList.spec.js:179:5)
+      at Suite.<anonymous> (ReadingList.spec.js:166:3)
+      at Object.<anonymous> (ReadingList.spec.js:142:1)
+
+  ● The Reading List › BookList class › Finish reading current book › encountered a declaration exception
+
+    TypeError: Cannot read property 'value' of null
+
+      11 |
+      12 |   add(){
+    > 13 |     let bookName = document.getElementById('bookName').value;
+         |                    ^
+      14 |     let bookGenre = document.getElementById('bookGenre').value;
+      15 |     let bookAuthor = document.getElementById('bookAuthor').value;
+      16 |     this.array[this.numberOfBooks] = new Book(bookName,bookGenre,bookAuthor,false,null);
+
+      at BookList.add (ReadingList.spec.js:13:20)
+      at Suite.<anonymous> (ReadingList.spec.js:211:16)
+      at Suite.<anonymous> (ReadingList.spec.js:206:5)
+      at Suite.<anonymous> (ReadingList.spec.js:166:3)
+      at Object.<anonymous> (ReadingList.spec.js:142:1)
+
+Test Suites: 1 failed, 1 total
+Tests:       2 failed, 8 passed, 10 total
+Snapshots:   0 total
+Time:        1.042 s, estimated 2 s
+Ran all test suites matching /ReadingList.spec.js/i.
+-------------------------------------------------------------------
